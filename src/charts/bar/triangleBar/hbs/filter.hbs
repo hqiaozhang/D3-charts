@@ -1,0 +1,8 @@
+<filter id="{{filterId}}">
+  <!-- 创建偏移  -->
+  <feOffset result="offOut"  in="SourceAlpha" dx="2" dy="2" />
+  <!-- 创建模糊效果 -->
+  <feGaussianBlur result="blurOut" in="SourceGraphic" stdDeviation="10"/>
+  <!-- 合并滤镜  -->
+  <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+</filter>

@@ -1,0 +1,23 @@
+ 
+.arc-bg {
+   animation:rotate 30s infinite linear;
+  -webkit-animation:rotate 30s infinite linear; 
+  transform-origin:50% 50%;
+  backface-visibility: hidden; /*防止页面抖动*/
+}
+.texts tspan{
+  fill: #fff;
+  font-size: 18px;
+  text-anchor: middle;
+}
+.texts tspan:last-child{
+  fill: #5e98cd;
+  font-size: 14px;
+}
+
+/*旋转动画*/
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+

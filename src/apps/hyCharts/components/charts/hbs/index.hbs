@@ -1,0 +1,13 @@
+<!-- 左边导航 -->
+<div class="charts-content cont-wrap">
+  <div class="charts-left">
+    <ul>
+      {{#each this}}
+      <li index={{@index}}> <a href="#{{url}}"> <i class="iconfont icon-{{key}}"></i>{{name}} </a></li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <!-- 右边图表 -->
+  <div class="charts-right"></div>  
+</div>

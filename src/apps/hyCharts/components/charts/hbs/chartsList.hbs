@@ -1,0 +1,17 @@
+<!-- 组件 -->
+{{#each this}}
+<div class="chart-list-panel" id={{key}}>
+  <h3><i></i>{{typeName}}</h3>
+  <div class="row">
+  {{#each child}}
+   <div class='col-3'>
+      <a class='chart-link' name={{name}} type={{key}} dataUrl={{dataUrl}}>
+        <img class='chart-img' src='{{imgUrl}}'>
+        <h4 class='chart-title'>{{name}}</h4>
+        <h5 class='author'>Author：{{author}}</h5>
+      </a>
+   </div> 
+    {{/each}}
+   </div>
+   </div>
+{{/each}}  

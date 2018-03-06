@@ -1,0 +1,356 @@
+/*引入字体图标样式*/
+@import './iconfont.css';
+
+.charts-content {
+  .charts-left {
+    width: 10%;
+    position: fixed;
+    background: #293c55;
+    color: #fff;
+    line-height: 50px;
+    height: 1080px;
+    ul {
+      width: 100%;
+      float: left;
+      
+      li {
+        width: 92%;
+        float: left;
+        padding-left: 8%;
+        cursor: pointer;
+        margin: 5px 0;
+        transition: all 0.5s;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        &:hover {
+          background: #1c3250;
+        }
+      }
+      .active {
+        background: #1c3250;
+      }
+    }
+  }
+  /*图表右边*/
+  .charts-right {
+    width: 88%;
+    float: right;
+    padding-top: 20px;
+    .chart-list-panel {
+      width: 100%;
+      float: left;
+      margin-bottom: 50px;
+      h3 {
+        color: #a21f23;
+        width: 100%;
+        font-size: 18px;
+        line-height: 20px;
+        text-indent: 5px;
+        margin-bottom: 20px;
+        i {
+          display: block;
+          width: 3px;
+          height: 20px;
+          background: #a21f23;
+          float: left;
+        }
+      }
+      .row {
+        float: left;
+        width: 100%;
+        margin-left: -15px;
+        .col-3 {
+          float: left;
+          width: 22.5%;
+          position: relative;
+          padding-right: 15px;
+          padding-left: 15px;
+          a {
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+            display: block;
+            padding-bottom: 5px;
+            cursor: pointer;
+            top: 0;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            /* Safari */
+            float: left;
+            img.chart-img {
+              width: 100%;
+              display: block;
+              height: 251px;
+              background: #d4d4d4;
+              margin-bottom: 10px;
+              border-radius: 5px 5px 0 0;
+              pointer-events: none;
+              float: left;
+            }
+            h4.chart-title {
+              color: #293c55;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              padding-bottom: 10px;
+              margin: 0;
+              font-weight: normal;
+              font-size: 16px;
+              text-align: left;
+              pointer-events: none;
+              float: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 58%;
+              padding-left: 3%;
+            }
+            h5.author {
+              float: right;
+              padding-right: 10px;
+              font-size: 12px;
+              color: #888;
+              padding-top: 3px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 35%;
+            }
+            &:hover {
+              top: -10px;
+              -webkit-border-radius: 4px;
+              border-radius: 5px;
+              -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+      }
+    }
+    /*图表列表*/
+    .charts-list {
+      float: left;
+      div {
+        padding: 2%;
+        margin: 2%;
+        float: left;
+        background: #15193e;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-bottom: 40px solid #fff;
+        width: 26%;
+        height: 250px;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:nth-last-child(3n-1) {
+          margin-right: 0;
+        }
+      }
+    }
+    .charts-list div svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/*旋转地球弹窗*/
+
+.earth-content-popup {
+  position: fixed;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.92);
+  width: 100%;
+  height: 1890px;
+  display: none;
+  z-index: 3;
+  .close {
+    background: url(../images/close-btn.png) no-repeat;
+    background-size: 100% 100%;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+}
+
+/*弹窗*/
+
+.charts-content-popup,
+.heatmap-content-popup {
+  position: fixed;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.92);
+  width: 100%;
+  height: 1890px;
+  display: none;
+  z-index: 3;
+  .heat-popup-content {
+    width: 100%;
+    height: 100%;
+  }
+  .popup-content {
+    width: 700px;
+    height: 650px;
+    position: absolute;
+    // left: 50%;
+    // top: 1%;
+    // margin-left: -350px;
+    background: url(../images/popup-bg.png) no-repeat;
+    background-size: 100% 100%;
+    top: 25%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+    h4 {
+      color: #fff;
+      font-size: 24px;
+      position: absolute;
+      top: 29px;
+      left: 56px;
+    }
+    .charts {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .close {
+      background: url(../images/close-btn.png) no-repeat;
+      background-size: 100% 100%;
+      width: 36px;
+      height: 36px;
+      position: absolute;
+      right: -12px;
+      top: -12px;
+      cursor: pointer;
+    }
+    .update-data-btn,
+    .document-btn {
+      background: #0089b1;
+      width: 100px;
+      height: 33px;
+      line-height: 33px;
+      color: #fff;
+      text-align: center;
+      font-size: 17px;
+      position: absolute;
+      bottom: 70px;
+      right: 40px;
+      cursor: pointer;
+      border-radius: 3px;
+      z-index: 10;
+    }
+    .document-btn {
+      right: 160px;
+    }
+  }
+}
+ 
+
+/*轴线*/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: none;
+}
+
+.axis text {
+  font-size: 14px;
+  stroke: none;
+  fill: #8cffff;
+}
+
+/* 网格线 */
+.grid-line path,
+.grid-line line {
+  fill: none;
+  stroke: #285c81;
+  opacity: 0.5;
+}
+
+.axis-x path,
+.axis-y path {
+  stroke: #285c81;
+  shape-rendering: optimizeSpeed;
+}
+
+/*组件提示框*/
+div.charts-tooltip {
+  position: absolute;
+  color: #fff;
+  background: rgba(0, 22, 74, 0.6);
+  border-radius: 5px;
+  padding: 5px;
+  line-height: 24px;
+  border: 0;
+}
+
+.charts-list div.map-info-tips,
+.charts-list div.map-info-tips div {
+  padding: 0;
+  border: none;
+}
+
+@media screen and (max-width: 1400px) {
+  /* 弹窗 */
+  .charts-content-popup .popup-content,
+  .heatmap-content-popup .popup-content {
+    top: 21%;
+  }
+  .charts-content .charts-left ul li {
+    margin: 0;
+    font-size: 14px;
+    line-height: 48px;
+  }
+  /* 图表样式 */
+  .charts-content .charts-right .chart-list-panel .row .col-3 {
+    width: 22%;
+    a {
+      h4.chart-title {
+        font-size: 13px;
+        
+      }
+      img.chart-img {
+        height: 200px;;
+      }
+      h5.author {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+/* @media screen and (max-width: 1400px) {
+  .charts-content .charts-right .chart-list-panel .row .col-3 {
+    width: 29.5%;
+    a {
+      h4.chart-title {
+        font-size: 13px;
+      }
+      h5.author {
+        font-size: 10px;
+      }
+    }
+  }
+}
+ */
+@media screen and (max-width: 900px) {
+  .charts-content .charts-right .chart-list-panel .row .col-3 {
+    width: 45%;
+    a {
+      img.chart-img {
+        height: 251px;;
+      }
+    }
+  }
+}

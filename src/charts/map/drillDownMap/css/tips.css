@@ -1,0 +1,21 @@
+.map-info-tips {
+    position: absolute;
+    width: 200px;
+    border-radius: 10px;
+    background: #239;
+    text-align: center; 
+    color: #fff;
+    .title {
+        color: #fff;
+        font-size: 18px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0;
+        border-bottom: 1px solid #6db9ff;
+    }
+    .content {
+        font-size: 20px;
+        height: 70px;
+        line-height: 40px;
+    }
+  }

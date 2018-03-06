@@ -1,0 +1,153 @@
+
+@import './highlight.css';
+
+
+.documents-content {
+  .document-left {
+    width: 10%;
+    position: fixed;
+    background: #293c55;
+    color: #fff;
+    line-height: 50px;
+    height: 1080px;
+    top: 55px;
+    ul {
+      width: 100%;
+      float: left;
+      li {
+        width: 85%;
+        float: left;
+        padding-left: 15%;
+        cursor: pointer;
+        margin: 5px 0;
+        transition: all 0.5s;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        &:hover {
+          background: #1c3250;
+        }
+      }
+      .active {
+        background: #1c3250;
+      }
+    }
+  }
+     /*图表右边*/
+  .document-right {
+    width: 90%;
+    position: absolute;
+    left: 10%;
+    #write {
+      width: 50%;
+      margin-left: 25%;
+      float: left;
+      position: relative;
+      p.charts-title  {
+        font-size: 22px;
+        margin: 0 0 20px 0;
+      }
+      /* 返回按钮 */
+      .back-charts-list {
+        position: absolute;
+        right: 40px;
+        margin: 0;
+        top: 20px;
+        cursor: pointer;
+        background: url("../images/back.png") no-repeat;
+        background-size: 100% 100%;
+        width: 40px;
+        height: 35px;
+      }
+      .charts-type {
+        width: 100%;
+        float: left;
+        padding: 0;
+        margin: 0;
+        h3 {
+          font-size: 22px;
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 10px;
+         margin: 10px 0;
+        }
+        li {
+          width: 43%;
+          float: left;
+          margin-bottom: 30px;
+          height: 55px;
+          cursor: pointer;
+          padding: 1px;
+          overflow: hidden;
+          background: #f6f6f6;
+          margin: 1.8% 3%;
+          border-radius: 4px;
+          /* box-shadow: 0 1px 3px rgba(41, 60, 85, 0.3); */
+          &:hover {
+            background: #f1f1f1;
+          }
+          img {
+            width: 60px;
+            height: 50px;
+            float: left;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            padding: 1px;
+            box-shadow: 0 0 3px #ccc;
+            pointer-events: none;
+            border-radius: 4px;
+          }
+          p {
+            pointer-events: none;
+            font-size: 14px;
+            margin: 3px 0;
+            float: left;
+            width: 73%;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            &:last-child {
+              font-size: 13px;
+              color:#666;
+            }
+          }
+        }
+      } 
+    }
+  }
+
+  /* 右下角导航分类 */
+  .cahrts-classify-nav {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 65px;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,.15);
+    background-color: #1d2c53;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+    display: none;
+    a{
+      border-top: 1px solid #44506b;
+      box-shadow: 0 1px 0 #fff;
+      cursor: pointer;
+      display: inline-block;
+      width: 100%;
+      color: #fff;
+      text-decoration:none;
+    }
+    a:hover,
+    .active {
+      background: #172445;
+    }
+    .gotop {
+      cursor: pointer;
+      background: url("../images/gotop.png") center center no-repeat;
+      background-size: 45% 65%;
+      width: 65px;
+      height: 35px;
+      display: none;
+    }
+  }
+}

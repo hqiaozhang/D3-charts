@@ -1,0 +1,31 @@
+{{#each config}}
+  <linearGradient id="{{id}}" x1="{{gradient.x1}}" y1="{{gradient.y1}}" x2="{{gradient.x2}}" y2="{{gradient.y2}}">
+    <stop offset="{{gradient.offset1}}" style="stop-color:{{stopColor}}; stop-opacity:{{gradient.opacity1}}"/>
+    <stop offset="{{gradient.offset2}}" style="stop-color:{{endColor}}; stop-opacity:{{gradient.opacity2}}"/>
+  </linearGradient>
+{{/each}}
+
+<filter id="{{filterId}}" x="0%" y="0%" width="200%" height="200%">
+  <!-- 创建偏移  -->
+  <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2"/>
+  <!-- 创建模糊效果 -->
+  <feGaussianBlur result="blurOut" in="SourceGraphic" stdDeviation="5"/>
+  <!-- 合并滤镜  -->
+  <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+</filter>
+
+{{#each patterns}}
+  <pattern id="{{id}}" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+    <g transform="rotate(45)">
+      <line x1="0" y1="0" x2="18" y2="0" stroke={{fill}} style="stroke-width:1;"></line>
+    </g>
+  </pattern>
+{{/each}}
+
+<!-- {{#each patterns}} 
+ <pattern id="{{id}}" y="0" width="2" height="2" patternUnits="userSpaceOnUse">
+  <g transform="rotate(45)">
+   <line x1="0" y1="0" x2="18" y2="0" stroke={{fill}} style="stroke-width:1; "></line>
+  </g> 
+</pattern>
+{{/each}} -->

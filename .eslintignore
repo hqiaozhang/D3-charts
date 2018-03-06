@@ -1,0 +1,5 @@
+dist
+node_modules
+webpack.*.js
+src/loader/common/scripts/*.js
+static/*.json

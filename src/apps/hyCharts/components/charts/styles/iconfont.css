@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url(../fonts/iconfont.eot);
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 24px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.charts-content,
+.zr-charts-content {
+  .charts-left {
+    i.iconfont {
+      float: left;
+      display: block;
+      padding-right: 15px;
+    }
+    .icon-mutifunction{
+      content: '';
+    }
+    .icon-bar:before {
+      content: '\e600';
+    }
+    .icon-pie:before {
+      content: '\e601';
+    }
+    .icon-multifunction:before {
+      content: '\e601';
+    }
+    .icon-area:before {
+      content: '\e604'
+    }
+    .icon-line:before {
+      content: '\e802';
+    }
+    .icon-map:before {
+      content: '\e882';
+    }
+    .icon-heatMap:before {
+      content: '\e882';
+    }
+    .icon-scatter:before {
+      content: '\e651';
+    }
+    .icon-tree:before {
+      content: '\e65d';
+    }
+    .icon-hotmap:before {
+      content: '\e73f';
+    }
+    .icon-gauge:before {
+      content: '\e66c';
+    }
+    .icon-force:before {
+      content: '\e615';
+    }
+    .icon-radar:before {
+      content: '\e615';
+    }
+    .icon-customize:before {
+      content: '\e6c9';
+    }
+  }
+}

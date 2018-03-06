@@ -1,0 +1,16 @@
+/**
+ * @Author:      孙雨珩
+ * @DateTime:    2017-07-24 16:15:54
+ * @Description: 全局样式
+ * @Last Modified By:   孙雨珩
+ * @Last Modified Time:    2017-07-24 16:15:54
+ */
+
+body {
+  font-family: "Microsoft YaHei";
+}
+
+@font-face {
+  font-family: digifacewide;
+  src: url("./fonts/digifacewide.ttf")
+}

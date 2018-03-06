@@ -1,0 +1,7 @@
+
+{{#each config}}
+  <linearGradient id="{{id}}" x1="{{gradient.x1}}" y1="{{gradient.y1}}" x2="{{gradient.x2}}" y2="{{gradient.y2}}">
+    <stop offset="{{gradient.offset1}}" style="stop-color:{{stopColor}}; stop-opacity:{{gradient.opacity1}}"/>
+    <stop offset="{{gradient.offset2}}" style="stop-color:{{endColor}}; stop-opacity:{{gradient.opacity2}}"/>
+  </linearGradient>
+{{/each}}

@@ -1,0 +1,64 @@
+ .heatmap-content-popup {
+   .close {
+      font-size: 32px;
+      color: #fff;
+      background: url(../images/close.png) no-repeat;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 40px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      cursor: pointer;
+      z-index: 1;
+  }
+
+  div.charts-tooltip {
+    position: absolute;
+    left: 450px;
+    top: 450px;  
+    font-size: 45px;
+    z-index: 5;
+    background: url(../images/tooltip-bg.png) no-repeat;
+    width: 460px;
+    height: 261px;
+    padding-left: 45px;
+    padding-top: 17px;
+    pointer-events: none;
+    .title {
+      font-size: 30px;
+    }
+    .total {
+      color: #01ffff;
+      font-size: 62px;
+      text-shadow: 3px 3px 22px #00a9ab;
+      margin-top: 36px;
+      span {
+        font-size: 32px;
+        padding-right: 5px;
+      }
+    }
+    .unit {
+      color: #bdbcbd;
+      font-size: 22px;
+      position: absolute;
+      right: 70px;
+      bottom: 103px;
+    }
+    .operator-values {
+      font-size: 26px;
+      margin-top: 23px;
+      line-height: 38px;
+    }
+  }
+}
+.area-names-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  .name-group {
+    cursor: pointer;
+  }
+}

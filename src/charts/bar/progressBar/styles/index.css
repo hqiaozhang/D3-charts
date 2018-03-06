@@ -1,0 +1,69 @@
+foreignObject  {
+  body{
+    background: none;
+    padding: 0;
+  }
+  div {
+    padding: 0;
+    margin: 0;
+  }
+  
+}
+
+.data-bar {
+  background-color: #0592e3;
+    background-image: linear-gradient(
+       -45deg,
+       transparent 0em,
+       transparent 0.8em,
+       #097cf0 0.9em,
+       #097cf0 2.1em,
+       transparent 2.1em,
+       transparent 2.9em,
+       #097cf0 3.1em
+ )
+}
+
+.data-bar {
+  border-radius: 12px;
+  background-size: 3em 3em;
+  animation: warning-animation 750ms infinite linear;
+  box-shadow: 0 0 1vh #295b7a;
+  float: left;
+}
+.rect-data-circle {
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  font-size: 28px;
+  font-family: digifacewide;
+  color: #79e3ff;
+  border-radius: 37px;
+  border: 2px solid #17bb74;
+  background: #06070a;
+  box-shadow: 0 0 6px 6px #295b7a;
+  width: 28px;
+  height: 28px;
+  margin-top: -10px;
+  line-height: 15px;
+  
+}
+.rect-data-circle span {
+  font-family: "consolas";
+  font-size: 18px;
+ 
+}
+@keyframes warning-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 3em 0;
+    }
+}
+.grid-line-y .tick:first-child line {
+  stroke-dasharray: 0, 0;
+}
+.grid-line-y line{ 
+  stroke-dasharray: 3, 3;
+}

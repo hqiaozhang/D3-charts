@@ -1,0 +1,17 @@
+{{#each this}}
+    <li class="terminal-item">
+        <div class="item-index" style="color:{{color}}">{{@index}}</div>
+        <div class="item-container">
+            <div class="bar-container">
+                <div class="back-bar">
+                    <div class="outer-bar" style="width:{{barWidth}}px">
+                        <div class="real-bar"></div>
+                    </div>
+                </div>     
+                <div class="value">{{value}}</div>       
+            </div>
+
+            <div class="item-name">{{name}}</div>
+        </div>
+    </li>
+{{/each}}

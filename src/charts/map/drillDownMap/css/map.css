@@ -1,0 +1,16 @@
+.map {
+    position: relative;
+    .return-main-map {
+        position: absolute;
+        width: 100px;
+        height: 40px;
+        background: #03A9F4;
+        left: 1400px;
+        top: 45px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}

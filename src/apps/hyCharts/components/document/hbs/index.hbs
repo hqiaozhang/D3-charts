@@ -1,0 +1,27 @@
+
+<div class="documents-content cont-wrap">
+  <!-- 左边导航 -->
+  <div class="document-left">
+    <ul class="document-nav">
+      {{#each docNav}}
+      <li type={{type}}>{{name}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  {{!-- 右边组件列表 --}}
+  <div class="document-right">
+    <div id="write">
+      
+    </div>
+  </div>
+  {{!-- 右下角导航 --}}
+  <div class="cahrts-classify-nav">
+    <div class="gotop"></div>
+    <div class="chats-type-list">
+      {{#each chartsNav}}
+        <a href="#{{url}}D">{{name}}</a>
+       {{/each}}
+    </div>
+  </div>
+</div>
+

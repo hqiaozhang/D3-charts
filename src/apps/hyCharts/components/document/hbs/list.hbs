@@ -1,0 +1,14 @@
+{{!-- 组件列表 --}}
+{{#each this}}
+  <ul class="charts-type" id="{{trim key}}D" key="{{key}}">
+    <h3>{{typeName}}</h3>
+  {{#each child}}
+    <li key="{{key}}"> 
+      <img class='chart-img' src='{{imgUrl}}'>
+      <p>{{name}}</p>
+      <p>组件名：{{key}}</p>
+    </li>
+    {{/each}}
+  </ul>
+{{/each}}
+ 

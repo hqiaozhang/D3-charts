@@ -1,0 +1,62 @@
+[
+  {
+    "name": "多功能图",
+    "key": "multifunction",
+    "url": "multifunction"
+  },
+  {
+    "name": "柱状图",
+    "key": "bar",
+    "url": "bar"
+  },
+  {
+    "name": "饼图",
+    "key": "pie",
+    "url": "pie"
+  },
+  {
+    "name": "面积图",
+    "key": "area",
+    "url": "area"
+  },
+  {
+    "name": "折线图",
+    "key": "line",
+    "url": "line"
+  },
+  {
+    "name": "关系图",
+    "key": "force",
+    "url": "force"
+  },
+  {
+    "name": "地图",
+    "key": "map",
+    "url": "map"
+  },
+  {
+    "name": "热力图",
+    "key": "heatMap",
+    "url": "heatMap"
+  },
+  {
+    "name": "雷达图",
+    "key": "radar",
+    "url": "radar"
+  },
+  {
+    "name": "树形图",
+    "key": "tree",
+    "url": "tree"
+  },
+  {
+    "name": "仪表盘",
+    "key": "gauge",
+    "url": "gauge"
+  },
+  {
+    "name": "自定义",
+    "key": "customize",
+    "url": "customize"
+  }
+]

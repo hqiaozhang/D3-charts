@@ -1,0 +1,26 @@
+{{#each config}}
+  <linearGradient id="{{id}}" x1="{{gradient.x1}}" y1="{{gradient.y1}}" x2="{{gradient.x2}}" y2="{{gradient.y2}}">
+
+    {{#each gradient.stops}}
+      <stop offset="{{offset}}" style="stop-color: {{color}}"/>
+    {{/each}}
+  </linearGradient>
+ 
+
+<pattern id="{{patternId}}" x="0" y="0" width="1850" height="1630" patternUnits="userSpaceOnUse">
+  <rect width="1850" height="1630" fill= "url(#{{id}})" /> 
+</pattern>
+{{/each}}
+
+
+
+
+<filter id="{{filterId}}">
+  <!-- 创建偏移  -->
+  <feOffset result="offOut"  in="SourceAlpha" dx="2" dy="2" />
+  <!-- 创建模糊效果 -->
+  <feGaussianBlur result="blurOut" in="SourceGraphic" stdDeviation="3"/>
+  <!-- 合并滤镜  -->
+  <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+</filter>
+ 

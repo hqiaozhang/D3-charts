@@ -1,0 +1,14 @@
+.charts-bg {
+  background: url(./images/pie-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 205px;
+  height: 206px;
+  left: 129px;
+  top: 93px;
+  z-index: 0;
+}
+.basePie-svg {
+  position: absolute;
+}

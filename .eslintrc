@@ -1,0 +1,9 @@
+{
+  "parser": "babel-eslint",
+  "extends": "eslint-config-hyfe",
+  "rules": {
+    "guard-for-in": 1,
+    "no-invalid-this": 0,
+    "no-debugger": 0
+  }
+}

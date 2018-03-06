@@ -1,0 +1,9 @@
+<pattern id="{{id}}" x="0" y="0" width="1" height="1"
+  patternUnits="objectBoundingBox">
+  <rect x="0" y="0" width="100%" height="100%" fill="{{background}}"/>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#{{id}}line)"/>
+</pattern>
+<pattern id="{{id}}line" x="0" y="0" width="1" height="{{_height}}"
+  patternUnits="objectBoundingBox">
+  <rect x="0" y="0" width="100%" height="{{lineStyle.strokeWidth}}" fill="{{lineStyle.stroke}}"/>
+</pattern>

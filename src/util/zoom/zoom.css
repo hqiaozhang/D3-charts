@@ -1,0 +1,12 @@
+/**
+ * @Author:      孙雨珩
+ * @DateTime:    2017-08-08 13:06:21
+ * @Description: 用来支持zoom的样式
+ * @Last Modified By:   孙雨珩
+ * @Last Modified Time:    2017-08-08 13:06:21
+ */
+
+.zoomify {
+  transform-origin: left top;
+  overflow: hidden;
+}

@@ -1,0 +1,370 @@
+[
+  {
+    "typeName": "多功能图表",
+    "key": "multifunction",
+    "child": [
+      {
+        "name": "坐标系图表（暂支持柱状图、折线图、点阵图和区域图）",
+        "key": "axesChart",
+        "imgUrl": "",
+        "author": "谢洋(Oceanxy)",
+        "dataUrl": "fetchAxes"
+      },
+      {
+        "name": "饼、环系图表",
+        "key": "arcChart",
+        "imgUrl": "static/images/multifunction/arcChart.gif",
+        "author": "谢洋(Oceanxy)",
+        "dataUrl": "fetchArc"
+      }
+    ]
+  },
+  {
+      "typeName": "柱状图",
+      "key": "bar",
+      "child": [
+          {
+              "name": "滑块柱状图",
+              "key": "sliderBar",
+              "imgUrl": "static/images/bar/sliderBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "三角形柱状图",
+              "key": "triangleBar",
+              "imgUrl": "static/images/bar/triangleBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "箭头柱状图",
+              "key": "arrowBar",
+              "imgUrl": "static/images/bar/arrowBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "矩阵柱状图",
+              "key": "matrixBar",
+              "imgUrl": "static/images/bar/matrixBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "六边形组合柱状图",
+              "key": "pointBar",
+              "imgUrl": "static/images/bar/pointBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "不规则组合柱状图",
+              "key": "polygonBar",
+              "imgUrl": "static/images/bar/polygonBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "尖角柱状图",
+              "key": "polygonBar2",
+              "imgUrl": "static/images/bar/polygonBar2.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "矩形柱状图",
+              "key": "rectBar",
+              "imgUrl": "static/images/bar/rectBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "矩形组合柱状图",
+              "key": "splitBar2",
+              "imgUrl": "static/images/bar/splitBar2.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "顶部小圆点柱状图",
+              "key": "topCircleBar",
+              "imgUrl": "static/images/bar/topCircleBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "组合柱状图",
+              "key": "countBar",
+              "imgUrl": "static/images/bar/countBar.png",
+              "author": "张红桥",
+              "dataUrl": "fetchCountBar"
+          },
+          {
+              "name": "横向小圆点组合柱状图",
+              "key": "dotBar",
+              "imgUrl": "static/images/bar/dotBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "横向圆角渐变柱状图",
+              "key": "gradientBar",
+              "imgUrl": "static/images/bar/gradientBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "横向图案组合柱状图",
+              "key": "iconBar",
+              "imgUrl": "static/images/bar/iconBar.png",
+              "author": "白占宁"
+          },
+          {
+              "name": "横向滑块组合柱状图",
+              "key": "sliderBar2",
+              "imgUrl": "static/images/bar/sliderBar2.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "横向刻度柱状图",
+              "key": "splitBar",
+              "imgUrl": "static/images/bar/splitBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "横向三角形柱状图",
+              "key": "triangleBar2",
+              "imgUrl": "static/images/bar/triangleBar2.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "进度条柱状图",
+              "key": "progressBar",
+              "imgUrl": "static/images/bar/progressBar.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "横向组合柱状图",
+              "key": "gradientProcessBar",
+              "imgUrl": "static/images/bar/gradientProcessBar.png",
+              "author": "欧阳德才",
+              "dataUrl": "fetchGradientProcessBar"
+          },
+          {
+            "name": "正负值多柱形折线混合图",
+            "key": "barWithLine",
+            "imgUrl": "static/images/bar/barWithLine.jpg",
+            "author": "李祁",
+            "dataUrl": "fetchBarWithLine"
+        }
+        
+
+      ]
+  },
+  {
+      "typeName": "饼图",
+      "key": "pie",
+      "child": [
+          {
+              "name": "饼图",
+              "key": "pie",
+              "imgUrl": "static/images/pie/pie.gif",
+              "author": "张红桥",
+              "dataUrl": "fetchPie"
+          },
+          {
+              "name": "饼图",
+              "key": "basePie",
+              "imgUrl": "static/images/pie/basePie.png",
+              "author": "张红桥",
+              "dataUrl": "fetchPie"
+          },
+          {
+              "name": "3D饼图",
+              "key": "donut3d",
+              "imgUrl": "static/images/pie/donut3d.png",
+              "author": "张红桥",
+              "dataUrl": "fetchPie"
+          },
+          {
+              "name": "玫瑰饼图",
+              "key": "rosePie",
+              "imgUrl": "static/images/pie/rosePie.png",
+              "author": "张红桥",
+              "dataUrl": "fetchPie"
+          },
+          {
+              "name": "矩形组合饼图",
+              "key": "splitPie2",
+              "imgUrl": "static/images/pie/splitPie2.png",
+              "author": "张红桥",
+              "dataUrl": "fetchPie"
+          },
+          {
+              "name": "箭头组合饼图",
+              "key": "splitPie",
+              "imgUrl": "static/images/pie/splitPie.png",
+              "author": "张红桥",
+              "dataUrl": "fetchPie"
+          },
+          {
+              "name": "六边形饼图",
+              "key": "polygonPie",
+              "imgUrl": "static/images/pie/polygonPie.png",
+              "author": "张红桥",
+              "dataUrl": "fetchPie"
+          },
+          {
+              "name": "进度条饼图",
+              "key": "progressPie",
+              "imgUrl": "static/images/pie/progressPie.png",
+              "author": "张红桥",
+              "dataUrl": "fetchPie"
+          }
+      ]
+  },
+  {
+      "typeName": "面积图",
+      "key": "area",
+      "child": [
+          {
+              "name": "面积图",
+              "key": "areaChart",
+              "imgUrl": "static/images/area/areaChart.png",
+              "author": "张红桥",
+              "dataUrl": "fetchLine"
+          },
+          {
+              "name": "三角形渐变面积图",
+              "key": "gradientTriangle",
+              "imgUrl": "static/images/area/gradientTriangle.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "三角形面积图",
+              "key": "triangle",
+              "imgUrl": "static/images/area/triangle.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "水波纹面积图",
+              "key": "waveCharts",
+              "imgUrl": "static/images/area/waveCharts.gif",
+              "author": "张红桥",
+              "dataUrl": "fetchPie"
+          }
+      ]
+  },
+  {
+      "typeName": "拆线图",
+      "key": "line",
+      "child": [
+          {
+              "name": "同环比拆线图",
+              "key": "lineChart",
+              "imgUrl": "static/images/line/lineChart.png",
+              "author": "张红桥",
+              "dataUrl": "fetchLine"
+          }
+      ]
+  },
+  {
+      "typeName": "关系图",
+      "key": "force ",
+      "child": [
+          {
+              "name": "力导向图",
+              "key": "forceCharts",
+              "imgUrl": "static/images/force/forceCharts.png",
+              "author": "张红桥",
+              "dataUrl": "fetchForce"
+          }
+      ]
+  },
+  {
+      "typeName": "地图",
+      "key": "map",
+      "child": [
+          {
+              "name": "地图",
+              "key": "map",
+              "imgUrl": "static/images/map/map.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "旋转地球",
+              "key": "earthMap",
+              "imgUrl": "static/images/map/earth.gif",
+              "author": "谢洋"
+          },
+          {
+              "name": "旋转地球",
+              "key": "earthMapLight",
+              "imgUrl": "static/images/map/earthLight.gif",
+              "author": "张红桥"
+          }
+      ]
+  },
+  {
+      "typeName": "热力图",
+      "key": "heatMap",
+      "child": [
+          {
+              "name": "热力图",
+              "key": "areaHeatMap",
+              "imgUrl": "static/images/heatMap/heatMap.png",
+              "author": "张红桥"
+          }
+      ]
+  },
+  {
+      "typeName": "雷达图",
+      "key": "radar",
+      "child": [
+          {
+              "name": "雷达图",
+              "key": "radar",
+              "imgUrl": "static/images/radar/radar.png",
+              "author": "张红桥",
+              "dataUrl": "fetchRadar"
+          }
+      ]
+  },
+  {
+      "typeName": "树形图",
+      "key": "tree",
+      "child": [
+          {
+              "name": "树形图",
+              "key": "tree",
+              "imgUrl": "static/images/tree/tree.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "地区树图",
+              "key": "tree1",
+              "imgUrl": "static/images/tree/tree1.gif",
+              "author": "张红桥"
+          }
+      ]
+  },
+  {
+      "typeName": "仪表盘",
+      "key": "gauge",
+      "child": [
+          {
+              "name": "速度仪表盘图",
+              "key": "speedDashBoard",
+              "imgUrl": "static/images/gauge/speedDashBoard.png",
+              "author": "张红桥"
+          },
+          {
+              "name": "仪表盘图",
+              "key": "dashboard1",
+              "imgUrl": "static/images/gauge/dashboard1.png",
+              "author": "张红桥"
+          }
+      ]
+  },
+  {
+      "typeName": "其他",
+      "key": "customize",
+      "child": [
+          {
+              "name": "柱状环绕圆",
+              "key": "polarCoordinates",
+              "imgUrl": "static/images/customize/polarCoordinates.png",
+              "author": "张红桥"
+          }
+      ]
+  }
+]

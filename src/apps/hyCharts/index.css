@@ -1,0 +1,54 @@
+
+body {
+  background: #eee;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: #212833;
+  height: 55px;
+  line-height: 55px;
+  color: #fff;
+  z-index: 2;
+  .logo {
+    float: left;
+    background: #293c55 url(images/hylogo.gif) no-repeat;
+    background-size: 100% 93%;
+    height: 55px;
+    width: 10%;
+  }
+  .nav {
+    position: absolute;
+    left: 10%;
+    width: 90%;
+    height: 55px;
+    li {
+      float: left;
+      padding: 0 30px;
+      margin: 0 15px;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        background: #a21f23;
+      }
+    }
+    li.cur {
+      background: #a21f23;
+    }
+  }
+}
+
+.charts-content,
+.main-content,
+.documents-content,
+.charts-content {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 55px;
+}
+
+.charts-content {
+  display: block;
+}

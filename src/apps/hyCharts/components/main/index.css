@@ -1,0 +1,11 @@
+ /*首页样式表*/
+
+.cur{
+  background: #a21f23;
+}
+.main-content {
+  background:#16171c url(./images/main.jpg) no-repeat;
+  background-size: 100% 90%;
+  height: 93%;
+  
+}

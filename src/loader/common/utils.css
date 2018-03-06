@@ -1,0 +1,32 @@
+/**
+ * @Author:      孙雨珩
+ * @DateTime:    2017-07-20 11:30:15
+ * @Description: 工具类
+ * @Last Modified By:   孙雨珩
+ * @Last Modified Time:    2017-07-20 11:30:15
+ */
+
+/* 隐藏 */
+.hide {
+  display: none !important;
+}
+
+/* 清浮动 */
+.clearfix {
+  zoom: 1;
+
+  &:after {
+    display: table-cell;
+    content: "";
+    clear: both;
+  }
+}
+
+/* 宽高完全填充父元素 */
+.abs-fit {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}

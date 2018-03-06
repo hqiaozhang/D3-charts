@@ -1,0 +1,69 @@
+
+/**
+弹出框样式
+*/
+.model-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    display: block;
+    height: auto;
+}
+
+.model-container {
+  position: relative;
+  width: 100%;
+}
+.model-body {
+    position: relative;
+    width: 500px;
+    top: 100px;
+    left: 50%;
+    margin-left: -250px;
+    background: #000b4e;
+    font-size: 32px;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    border-radius: 5px;
+}
+/*关闭按钮*/
+.close-model{
+    position: absolute;
+    right: 678px;
+    top: 86px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    background: url(./images/close-btn.png) no-repeat;
+}
+/*标题*/
+.model-container .title {
+    float: left;
+    width: 100%;
+    font-size: 30px;
+    color: #5e98cd;
+    border-bottom: 1px solid #6db9ff;
+    padding-bottom: 10px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: normal;
+    i{
+        /*background: url(../images/mark2.png) no-repeat left center;*/
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        padding-right: 10px;
+    }
+    span {
+        font-size: 32px;
+        color: #fff;
+        text-shadow: 0 0 5px #fff;
+        padding-left: 20px;
+    }
+}
